@@ -1,9 +1,12 @@
 import express from 'express'
 import * as Path from 'node:path'
+import tasksRouter from './routes/tasks.ts'
 
 const server = express()
 
 server.use(express.json())
+
+server.use('/api/v1/todos', tasksRouter)
 
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(Path.resolve('public')))
