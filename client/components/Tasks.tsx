@@ -3,7 +3,6 @@ import { Task } from './Task'
 interface TaskProps {
   tasks: TaskModel[]
 }
-
 export function Tasks({ tasks }: TaskProps) {
   return (
     <ul className="todo-list">

@@ -5,7 +5,7 @@ import { deleteTask } from '../apis/todo.ts'
 import DeleteTodo from './DeleteTodo.tsx'
 
 function App() {
-  const { status, data, error, isFetching } = getTasks()
+  const { status, data, error } = getTasks()
 
   return (
     <>

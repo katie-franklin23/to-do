@@ -7,16 +7,9 @@ export function getTasks(db = connection): Promise<Task[]> {
 }
 
 export function addTask(data: any) {
-  console.log(data)
   return connection('todos').insert(data)
 }
 
 export function deleteTask(id: number) {
-  console.log(id)
   return connection('todos').where({ id: id }).del()
-}
-
-export function updateTask(data: any, id: number) {
-  console.log(data)
-  return connection('todos').where({ id: id }).update(data)
 }
