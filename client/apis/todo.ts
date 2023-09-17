@@ -1,5 +1,5 @@
 import request from 'superagent'
-import { Task, TaskData } from '../../models/Tasks'
+
 import { UseQueryResult, useQuery } from '@tanstack/react-query'
 
 // To write the below //
@@ -10,6 +10,7 @@ const addUrl = '/api/v1/todos/add'
 // Get todos
 
 export function getTasks(): UseQueryResult {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   return useQuery({
     queryKey: ['todo'],
     queryFn: async () => {
@@ -21,7 +22,7 @@ export function getTasks(): UseQueryResult {
 
 // Add a todo
 
-export async function addTask(newTask: any) {
+export async function addTask(newTask: string) {
   try {
     const response = await request.post(addUrl).send(newTask)
 

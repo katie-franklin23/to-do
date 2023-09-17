@@ -26,7 +26,6 @@ function AddTodo() {
         <input
           className="new-todo"
           placeholder="What needs to be done?"
-          autoFocus={true}
           onChange={(event) => setTask(event.target.value)}
           value={task}
         />

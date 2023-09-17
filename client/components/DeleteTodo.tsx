@@ -33,7 +33,6 @@ function DeleteTodo() {
         id="deleteTaskInput"
         className="delete-task"
         placeholder="Enter task ID to delete"
-        autoFocus={true}
         onChange={(event) => setTaskId(event.target.value)}
         value={taskId}
       />

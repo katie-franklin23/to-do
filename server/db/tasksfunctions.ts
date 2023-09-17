@@ -6,7 +6,7 @@ export function getTasks(db = connection): Promise<Task[]> {
   return db<Task>('todos').select()
 }
 
-export function addTask(data: any) {
+export function addTask(data: string) {
   return connection('todos').insert(data)
 }
 

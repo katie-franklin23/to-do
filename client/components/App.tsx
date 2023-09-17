@@ -1,7 +1,7 @@
 import AddTodo from './AddTodo.tsx'
 import { Tasks } from './Tasks.tsx'
 import { getTasks } from '../apis/todo.ts'
-import { deleteTask } from '../apis/todo.ts'
+
 import DeleteTodo from './DeleteTodo.tsx'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       ) : (
         <>
           <header className="header">
-            <h1 tabIndex="0">todos</h1>
+            <h1>todos</h1>
             <AddTodo />
           </header>
           <section className="tasks" aria-labelledby="tasks-heading">
@@ -28,7 +28,7 @@ function App() {
             <DeleteTodo />
           </section>
           <footer className="footer">
-            <p tabIndex="0">Copyright © 2023</p>
+            <p>Copyright © 2023</p>
           </footer>
         </>
       )}
