@@ -4,6 +4,15 @@ This is a Todos Full-Stack application I built with TypeScript, React, JavaScrip
 
 Technologies involved in this app include : node modules and folders for databases, routes, API requests and React components.
 
+http://katie-franklin-todo.devacademy.nz/ 
+
+## Built Using
+- SCSS
+- TypeScript
+- React
+- HTML
+- JavaScript
+
 ## Setup
 
 ### 0. Cloning and installation
